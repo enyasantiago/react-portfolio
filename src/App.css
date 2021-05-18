@@ -21,8 +21,14 @@ h1 {
   background-color:#ff4d2a;
   opacity: 40%;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  color:white;
   }
+.awesome {
+  color: white;
+  font-size: 40px;
+}
+
 /* default portfolio style */
 #portfolio {
   background-color: grey;
@@ -64,6 +70,3 @@ h1 {
   
 }
 
-.PortfolioImages {
-  height: auto;
-}

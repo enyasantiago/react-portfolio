@@ -1,17 +1,34 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Resume from "../../images/Enya Santiago Resume.pdf";
 
 function Footer() {
   return (
     <>
-      <footer className="py-4 bg-secondary">
-        <div className="container">
-          <p className="m-0 text-center text-white">
-            Copyright &copy; 2021
-          </p>
-        </div>
-      </footer>
+    <footer class="footer">
+    <div class="row">
+      <div class="col-4">
+        <a class="awesome" href="https://github.com/enyasantiago">
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+      </div>
+      <div class="col-4">
+        <a class="awesome" href= {Resume}>
+        <FontAwesomeIcon icon={faFilePdf} />
+      </a>
+    </div>
+    <div class="col-4">
+        <a class="awesome" href="https://www.linkedin.com/in/enya-santiago-1716b714/">
+        <FontAwesomeIcon icon={faLinkedin } />
+        </a>
+      </div>
+    </div>
+</footer>
     </>
   );
-}
+} 
 
 export default Footer;
