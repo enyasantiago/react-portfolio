@@ -6,13 +6,13 @@ import Workday from "../../images/Workday Scheduler.png";
 import Budget from "../../images/Budget.png";
 import Burger from "../../images/Burgers.gif";
 import Buttons from "../Buttons";
-import Card from "../Card";
+import Project from "../Project";
 
 function Portfolio(props) {
     return (
     <>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={StyleMe}
             imgAlt={"Style Me"}
             cardTitle={"Style Me"}
@@ -25,7 +25,7 @@ function Portfolio(props) {
         />
         </div>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={MixTape}
             imgAlt={"Mix Tape"}
             cardTitle={"Mix Tape Maker"}
@@ -37,7 +37,7 @@ function Portfolio(props) {
         />
         </div>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={Weather}
             imgAlt={"Weather Dashboard"}
             cardTitle={"Weather Dashboard"}
@@ -49,7 +49,7 @@ function Portfolio(props) {
         />
         </div>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={Workday}
             imgAlt={"WorkDay Scheduler"}
             cardTitle={"WorkDay Scheduler"}
@@ -61,7 +61,7 @@ function Portfolio(props) {
         />
         </div>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={Budget}
             imgAlt={"Budget Tracker"}
             cardTitle={"Budget Tracker"}
@@ -73,7 +73,7 @@ function Portfolio(props) {
         />
         </div>
         <div class="card">
-        <Card
+        <Project
             PortfolioImages={Burger}
             imgAlt={"Burger Logger"}
             cardTitle={"Burger Logger"}

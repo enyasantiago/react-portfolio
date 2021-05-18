@@ -1,20 +1,40 @@
 .App {
   text-align: center;
-  font-family: 'Long Cang';
+  text-decoration: none;
+  color: gray;
 }
 /* 
 /* styles About headers */
-h1 {
-  font-family: 'Long Cang';
+h1, h3{
   padding: 20px;
   text-align: center;
+  text-decoration: none;
+  color: gray;
 }
-.navbar {
-  padding: 5%;
+.name {
+  color: white;
+
 }
+
+
 /* styles footer */
 .footer {
   position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color:#ff4d2a;
+  opacity: 40%;
+  text-align: center;
+  padding: 10px;
+  color:white;
+  }
+.awesome {
+  color: white;
+  font-size: 40px;
+}
+.header {
+  /* position: fixed; */
   width: 100%;
   left: 0;
   bottom: 0;

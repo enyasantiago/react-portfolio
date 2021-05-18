@@ -1,24 +1,28 @@
-import React from "react";
-import './App.css';
-import Header from "./components/Header";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Portfolio from "./components/Portfolio";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./pages/about";
+import PortfolioPage from "./pages/portfolio";
+import ContactPage from "./pages/contact";
 
 
 function App() {
   return (
-    <>
-    <Header/>,
-    <Contact/>
-    <div class="container-fluid" id="portfolio">
-    <Portfolio/>
+    <div className="App">
+      <Router>
+      <Switch>
+        <Route exact path={["/", "/about"]}>
+          <About />
+        </Route>
+        <Route exact path={["/contact"]}>
+          <ContactPage/>
+        </Route>
+        <Route exact path={["/portfolio"]}>
+          <PortfolioPage />
+        </Route>
+        </Switch>
+      </Router>
     </div>
-    <Footer/>
-    </>
-    
   );
-
 }
 
 export default App;
