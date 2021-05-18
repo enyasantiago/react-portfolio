@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const Buttons = (props) => {
- return (
-    
-    <button className="btn btn-secondary btn-lg" onClick={props.onClick}> {props.buttonText}  </button>
-    
-    
-)}
-export default Buttons;
+
+export function Buttons(props) {
+  return (
+    <div className="landing_btn_container">
+      <Link className="btn btn-outline-secondary" role="button" {...props} />
+    </div>
+  );
+}
+// export default Buttons;
