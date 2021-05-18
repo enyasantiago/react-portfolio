@@ -1,38 +1,69 @@
 .App {
   text-align: center;
+  font-family: 'Long Cang';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 
+/* styles About headers */
+h1 {
+  font-family: 'Long Cang';
+  padding: 20px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  padding: 5%;
+}
+/* styles footer */
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color:#ff4d2a;
+  opacity: 40%;
+  text-align: center;
+  padding: 20px;
   }
+/* default portfolio style */
+#portfolio {
+  background-color: grey;
+  padding: 10%;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container-fluid{
+  padding: 0%;
+}
+/* default Home/About style*/
+#about {
+  padding: 15%;
+  background-color: gray;
   color: white;
+  text-align: center;
+
+}
+#contact {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.card {
+  margin-bottom: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+/* style for screens larger than 768px */
+@media screen and (min-width: 768px){
+  #about{
+      background-color: white;
+      color: black;
+      padding: 10% 10% 0% 10%;
+      text-align: left;
+  }
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PortfolioImages {
+  height: auto;
 }
