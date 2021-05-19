@@ -1,8 +1,9 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
+    Link
   } from "react-router-dom";
   import { Navbar,Nav } from 'react-bootstrap'
   import About from '../../pages/about';
@@ -21,22 +22,28 @@ class BootstrapNavbar extends React.Component{
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
-                                    <Nav.Link href="../../about">About</Nav.Link>
+                                    {/* <Nav.Link href="../../about">About</Nav.Link>
                                     <Nav.Link href="../../contact">Contact</Nav.Link>
-                                    <Nav.Link href="../../portfolio">Portfolio</Nav.Link>
+                                    <Nav.Link href="../../portfolio">Portfolio</Nav.Link> */}
+                                    <Nav.Link as={Link} to="about">About</Nav.Link>
+                                    <Nav.Link as={Link} to="contact">Contact</Nav.Link>
+                                    <Nav.Link as={Link} to="portfolio">Portfolio</Nav.Link>
                                     
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>
                             <br />
                             <Switch>
-                                <Route exact path="../../pages/about">
+                                {/* <Route exact path="../../pages/about"> */}
+                                <Route exact path="about">
                                     <About/>
                                 </Route>
-                                <Route path="../../pages/contact">
+                                {/* <Route path="../../pages/contact"> */}
+                                <Route path="contact">
                                     <ContactPage/>
                                 </Route>
-                                <Route path="../../pages/portfolio">
+                                {/* <Route path="../../pages/portfolio"> */}
+                                <Route path="portfolio">
                                     <PortfolioPage/>
                                 </Route>
                             </Switch>
