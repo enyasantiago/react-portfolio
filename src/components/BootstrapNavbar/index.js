@@ -35,15 +35,15 @@ class BootstrapNavbar extends React.Component{
                             <br />
                             <Switch>
                                 {/* <Route exact path="../../pages/about"> */}
-                                <Route exact path="about">
+                                <Route exact path="/about">
                                     <About/>
                                 </Route>
                                 {/* <Route path="../../pages/contact"> */}
-                                <Route path="contact">
+                                <Route path="/contact">
                                     <ContactPage/>
                                 </Route>
                                 {/* <Route path="../../pages/portfolio"> */}
-                                <Route path="portfolio">
+                                <Route path="/portfolio">
                                     <PortfolioPage/>
                                 </Route>
                             </Switch>
