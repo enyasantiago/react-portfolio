@@ -31,22 +31,19 @@ class BootstrapNavbar extends React.Component{
                                     </Nav>
                                 </Navbar.Collapse>
                             <br />
-                        <Router>
+                        {/* <Router basename='/'>
                             <Switch>
-                                {/* <Route exact path="../../pages/about"> */}
-                                <Route exact path="/about">
+                                 <Route exact path="/about">
                                     <About/>
                                 </Route>
-                                {/* <Route path="../../pages/contact"> */}
                                 <Route path="/contact">
                                     <ContactPage/>
                                 </Route>
-                                {/* <Route path="../../pages/portfolio"> */}
                                 <Route path="/portfolio">
                                     <PortfolioPage/>
                                 </Route>
                             </Switch>
-                        </Router>
+                        </Router> */}
                             </Navbar>
                     </div>
                 </div>
