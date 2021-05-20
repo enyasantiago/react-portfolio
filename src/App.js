@@ -8,7 +8,7 @@ import ContactPage from "./pages/contact";
 function App() {
   return (
     <div className="App">
-      <Router basename='/react-portfolio'>
+      <Router basename='/'>
       <Switch>
         <Route exact path={["/", "/about"]}>
           <About />
