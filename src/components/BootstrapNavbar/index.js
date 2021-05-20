@@ -17,7 +17,6 @@ class BootstrapNavbar extends React.Component{
             <div>
                 <div className="row">
                     <div className="col-md-12 nav justify-content-center">
-                        <Router>
                             <Navbar bg="white" variant="light" expand="lg" >
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
@@ -31,8 +30,8 @@ class BootstrapNavbar extends React.Component{
                                     
                                     </Nav>
                                 </Navbar.Collapse>
-                            </Navbar>
                             <br />
+                        <Router>
                             <Switch>
                                 {/* <Route exact path="../../pages/about"> */}
                                 <Route exact path="/about">
@@ -48,6 +47,7 @@ class BootstrapNavbar extends React.Component{
                                 </Route>
                             </Switch>
                         </Router>
+                            </Navbar>
                     </div>
                 </div>
             </div>
